@@ -1,0 +1,17 @@
+.App {
+  min-height: 100vh;
+  /* background-color: #f4f4f4; */
+  background-image: url("https://i.pinimg.com/736x/1f/09/6b/1f096ba8f982f747b3dbfeb616d9b923.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  /* background-color: #f4f4f4; */
+}
