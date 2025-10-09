@@ -40,6 +40,8 @@
         } */
 
         nav {
+            position: sticky;
+            top: 0;
             display: flex;
             justify-content: space-between;
             background-color: rgb(238, 217, 217);
@@ -47,7 +49,11 @@
 
         nav h1 {
             color: #007bff;
-            margin-left: 50px
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            
+            
         }
 
         #buttons {
@@ -73,12 +79,12 @@
             font-family: Verdana, Geneva, sans-serif;
         }
 
-        #index h1{
-            cursor:pointer
+        #index h1 {
+            cursor: pointer
         }
 
         #index h1,
-        #maincard h1{
+        #maincard h1 {
             font-family: Verdana, Geneva, sans-serif;
         }
 
@@ -100,10 +106,12 @@
 </head>
 
 <body>
-    <nav>
-        <div id="index">
-            <h1>DocEase</h1>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen; padding: 0.4rem 1rem;">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://cdn.pixabay.com/photo/2020/05/25/03/37/doctor-5216835_1280.png" alt="Logo" width="45" height="45" class="me-2 logo-fix">
+            <span style="font-weight: 900; font-size: 1.5rem; color: #007bff;">DocEase</span>
+        </a>
+        
 
         <div id="buttons">
             <button id="login">LOGIN</button>
@@ -112,13 +120,16 @@
         </div>
     </nav>
 
+    <style>
+  .logo-fix {
+    position: relative;
+    top: 3px; /* adjust this value (2–5px) until it looks perfect */
+  }
+</style>
+
     <div id="maincard">
         <div>
             <h1>Welcome to DocEase - Your Doctor Appointment Booking Buddy</h1>
-        </div>
-
-        <div>
-            <img src="https://cdn.pixabay.com/photo/2020/05/25/03/37/doctor-5216835_1280.png" height="100" width="150" alt="DocEase_image">
         </div>
     </div>
 
@@ -171,8 +182,6 @@
 </html>
 
 <script>
-
-    const url = "https://pococare-assignment.vercel.app/"
     const signup = document.getElementById("signup")
 
     signup.addEventListener("click", () => {
