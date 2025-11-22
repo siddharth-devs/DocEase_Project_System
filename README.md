@@ -37,7 +37,7 @@ MongoDB
 
 How to Run the Project
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/DocEase.git
+git clone https://github.com/siddharth-devs/DocEase_Project_System.git
 cd DocEase
 
 2️⃣ Install Dependencies
